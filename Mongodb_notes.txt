@@ -1,0 +1,60 @@
+
+
+			Mongo db
+
+Database: It is a collection of data
+			-> container for collections
+			
+
+Collection => table: It is a group of mongo db documents
+			-> No specific schema
+			-> No concept of JOINS
+
+Document: Data in mongo db is in form of key-value pairs
+			-> Each document has unique key "_id"
+			-> Flexible and user defined, having it's own schema
+			
+			
+1.Display databases : show databases;
+2.Create/Use existing database : use --database-name
+3.Name of current database : db
+4.Delete database : db.dropDatabase();
+
+5.Create Collection in current database : db.createCollection("--collection-name")
+6.Delete Collection in current database : db.--collection-name.drop();
+
+
+
+
+
+Datatypes in Mongo db:
+---------------------
+1. JSON:
+
+	{
+		'key':value,
+		'key':value,
+		'key':value,
+	}
+
+2.BSON:
+	Binary encoded JSON, have extended datatypes that are not supported by JSON, such as 
+
+			-> date 
+			-> timestamp
+			-> Object Id 
+3.Integer
+4.Boolean
+5.Double
+6.Arrays
+7.Object
+8.Null
+9.Date 
+10.Timestamp 
+11.Object Id
+12.code
+
+
+
+
+
