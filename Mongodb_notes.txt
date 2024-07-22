@@ -2,6 +2,13 @@
 
 			Mongo db
 
+
+Run Mongo db in vs code:
+------------------------
+		 -> open terminal
+		 -> open bash
+		 -> enter mongosh command
+
 Database: It is a collection of data
 			-> container for collections
 			
@@ -54,7 +61,15 @@ Datatypes in Mongo db:
 11.Object Id
 12.code
 
+Insert:
+--------
+		Any document can be inserted into collection
+		Every document has unique key "_id" (Primary key)
 
+		db.--collection-name({'key':'value'})
+
+		
+		
 
 
 
