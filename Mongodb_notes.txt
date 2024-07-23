@@ -61,12 +61,13 @@ Datatypes in Mongo db:
 11.Object Id
 12.code
 
-Insert:
+Insert/(Create):
 --------
 		Any document can be inserted into collection
 		Every document has unique key "_id" (Primary key)
 
-		db.--collection-name({'key':'value'})
+	single document =>	db.--collection-name.insert({'key':'value'})
+	multiple documents => db.--collection-name.insertMany([{'key':'value'},{'key':'value'}])
 
 		
 		
