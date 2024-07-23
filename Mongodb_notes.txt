@@ -69,6 +69,36 @@ Insert/(Create):
 	single document =>	db.--collection-name.insert({'key':'value'})
 	multiple documents => db.--collection-name.insertMany([{'key':'value'},{'key':'value'}])
 
+Update:
+-------
+
+	single document:
+	----------------
+			document can be updated based on the condition, and using $set 
+
+			db.--collection-name.update(
+				{'condition-key':'value'},
+				{
+					$set: {
+						"mobile":"123412123",
+						"isActive":true
+					}
+				}
+			)
+			db.leads.update({'name':'Shiva'},{$set: {"isActive":true}})
+	
+	Multiple document:
+	------------------
+			db.--collection-name.updateMany(
+				{'condition-key':'value'},
+				{
+					$set:{
+						"isActive":false
+					}
+				}
+			)
+			
+			db.leads.updateMany({'isActive':true},{$set: {"isActive":false}})
 		
 		
 
