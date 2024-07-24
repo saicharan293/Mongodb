@@ -99,6 +99,22 @@ Update:
 			)
 			
 			db.leads.updateMany({'isActive':true},{$set: {"isActive":false}})
+
+Read:
+-----
+
+	db.--collection-name.find() => return all the data
+
+	db.--collection-name.findOne() => returns only first document 
+
+	db.--collection-name.find ({"condition-key":"value"}) => returns particular details
+															 according to the condition
+
+
+	db.--collection-name.findOneAndReplace({"condition-key":"value"},{"replaced-key":"value"}) => replaces entire data of matched key 
+																								with the given replaced values 
+	
+	db.--collecition-name.findOneAndDelete({"condition-key": "value"})
 		
 		
 
